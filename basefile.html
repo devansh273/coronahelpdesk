@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="home" content="nav">
+    <title>world data table</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles/basefile.css">
+    <link rel="stylesheet" href="basefile.css"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="Images/tablefavicon.png" type="image/png" >
+    
+    <!-- script for deleting row -->
+    <SCRIPT>
+		function deleteRow(tableID) {
+			try {
+			var table = document.getElementById(tableID);
+			var rowCount = table.rows.length;
+
+			for(var i=0; i<rowCount; i++) {
+				var row = table.rows[i];
+				var chkbox = row.cells[0].childNodes[0];
+				if(null != chkbox && true == chkbox.checked) {
+					if(rowCount <= 1) {
+						alert("Cannot delete all the rows.");
+						break;
+					}
+					table.deleteRow(i);
+					rowCount--;
+					i--;
+				}
+			}
+			}catch(e) {
+				alert(e);
+			}
+		}
+    </SCRIPT>
+</head>
+
+<body>
+    <!-- code for  upper nav bar -->
+    <nav class="nav1">
+
+
+       
+        <a href="basefile.html"><i class="fas fa-globe"></i></a>
+        <a href="cases.html"><i class="fas fa-map"></i></a>
+        <a href="blogs.html">BLOG</a>
+        <a href="#whatsnew">WHAT'S NEW</a>
+        <a href="cases.html">CASES</a>
+
+        <div class="nav1-right">
+            <a href="update.html"><i class="fas fa-bell"></i></a>
+            <a href="#searchbar"><i class="fas fa-search"></i></a>
+            <a href="login.html">LOGIN<i class="fas fa-user-circle"></i></a>
+        </div>
+        <div class="heading1">
+            <a href ="homepage.html">CORONA &nbsp;HELP DESK</a>
+        </div>  
+
+    </nav>
+
+    <!-- code for left side nav bar -->
+    <section id=section1>
+        <div class="sc1">
+            
+            <ul>
+
+                <li> <a href="update.html">Updates & Notification</a></li>
+                <li><a href="myths2.html">Myth Buster</a></li>
+                <li> <a href="InfograficsVedios.html">Infographics</a></li>
+                <li class="active"> <a href="basefile.html">Data Table</a></li>
+                <li> <a href="guidance.html">Guidelines</a></li>
+                <li> <a href="leaders.html">From President</a></li>
+                <li> <a href="donation.html">Donate Money</a></li>
+                <li> <a href="financialsupport.html">Support</a></li>
+                <li> <a href="iso norms.html">Isolation Norms</a></li>
+                <li> <a href="travel.html">Travel</a></li>
+                <li> <a href="doanddont.html">Do's & Don'ts</a></li>
+                <li> <a href="faq.html">FAQS</a></li>
+
+
+            </ul>
+            
+            <main>
+                <!-- this part contains the delete button as well as the heading to the table -->
+
+                <INPUT type="button" value="Delete Row" onclick="deleteRow('tableID')" />
+
+                <table id="tableID">
+                        <h2><span style="padding-left:40%;width:100%"; colspan="6" >Overall Worlwide Data</span></h2>
+                    
+                    <!-- table heading -->
+                    <tr>
+                        <th>Select For Delete</th>
+                        <th>Name</th>
+                        <th>Cases - cumulative total</th>
+                        <th>Cases - newly reported in last 24 hours</th>
+                        <th>Deaths - cumulative total</th>
+                        <th>Deaths - newly reported in last 24 hours</th>
+                        <th>Transmission Classification</th>
+                    </tr>
+                    <!-- entries in table -->
+                  <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Global</td>
+                        <td>49,106,931</td>
+                        <td>555,872</td>
+                        <td>1,239,157</td>
+                        <td>7,910</td>
+                        <td></td>
+                  </tr>
+                  <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>United States of America</td>
+                        <td>9,504,758</td>
+                        <td>116,780</td>
+                        <td>233,292</td>
+                        <td>1,126</td>
+                        <td>Community transmission</td>
+                  </tr>
+                  <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>India</td>
+                        <td>8,462,080</td>
+                        <td>50,356</td>
+                        <td>125,562</td>
+                        <td>577</td>
+                        <td> Clusters of cases</td>
+                  </tr>
+                  <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Brazil</td>
+                        <td>5,590,025</td>
+                        <td> 0</td>
+                        <td>161106</td>
+                        <td>0</td>
+                        <td> Community transmission</td>
+                  </tr>
+                  <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Russian Federation</td>
+                        <td>1,753,836</td>
+                        <td>20,396</td>
+                        <td>30,251</td>
+                        <td>364</td>
+                        <td> Clusters of cases</td>
+                  </tr>
+                  <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Spain</td>
+                        <td>1,306,316</td>
+                        <td>0</td>
+                        <td>38,486</td>
+                        <td>0</td>
+                        <td> Community transmission</td>
+                  </tr>
+                  <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Spain</td>
+                        <td>1,306,316</td>
+                        <td>0</td>
+                        <td>38,486</td>
+                        <td>0</td>
+                        <td> Community transmission</td>
+                  </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Argentina</td>
+                        <td>1,217,028</td>
+                        <td>11,100</td>
+                        <td>32,766</td>
+                        <td>246</td>
+                        <td> Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" >central asia</td> <!-- columns are mergerd in single-->
+                    </tr> 
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>The United Kingdom</td>
+                        <td>1,146,488</td>
+                        <td>23,287</td>
+                        <td>48,475</td>
+                        <td>355</td>
+                        <td> Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Colombia</td>
+                        <td>1,117,977</td>
+                        <td>9,893</td>
+                        <td>32,209</td>
+                        <td>196</td>
+                        <td> Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Mexico</td>
+                        <td>949,197</td>
+                        <td>5,567</td>
+                        <td>93,772</td>
+                        <td>544</td>
+                        <td> Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Peru</td>
+                        <td>914,722</td>
+                        <td>2,935</td>
+                        <td>34,730</td>
+                        <td>59</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Italy</td>
+                        <td>862,681</td>
+                        <td>37,802</td>
+                        <td>40,638</td>
+                        <td>446</td>
+                        <td>Clusters of cases</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>South Africa</td>
+                        <td>734,175</td>
+                        <td>1,761</td>
+                        <td> 19,749</td>
+                        <td> 72</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Iran</td>
+                        <td>663,800</td>
+                        <td>8,864</td>
+                        <td> 37,409</td>
+                        <td> 422</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Germany</td>
+                        <td>642,488</td>
+                        <td>23,399</td>
+                        <td> 11,226</td>
+                        <td> 130</td>
+                        <td>Clusters of cases</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Chile</td>
+                        <td>518,390</td>
+                        <td>1,808</td>
+                        <td>14,450</td>
+                        <td> 46</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Poland</td>
+                        <td>493,765</td>
+                        <td>7,287</td>
+                        <td>14,450</td>
+                        <td> 445</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Iraq</td>
+                        <td>493,139</td>
+                        <td>3,568</td>
+                        <td>11,244</td>
+                        <td> 69</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Belgium</td>
+                        <td>487,949</td>
+                        <td>7</td>
+                        <td>12,708</td>
+                        <td>  21</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Ukraine</td>
+                        <td>450,934</td>
+                        <td>10,746</td>
+                        <td>8,312</td>
+                        <td>186</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Indonesia</td>
+                        <td>429,574</td>
+                        <td>0</td>
+                        <td>14,442</td>
+                        <td>0</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Bangladesh</td>
+                        <td>417,475</td>
+                        <td> 1,469</td>
+                        <td>6,0362</td>
+                        <td>15</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Czechia</td>
+                        <td>403,497</td>
+                        <td>11,552</td>
+                        <td> 4,526</td>
+                        <td>196</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Netherlands</td>
+                        <td>397,255</td>
+                        <td>7,232</td>
+                        <td>7,877</td>
+                        <td>118</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Turkey</td>
+                        <td>389,256</td>
+                        <td>2,436</td>
+                        <td>10,722</td>
+                        <td>83</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Romania</td>
+                        <td>287,062</td>
+                        <td>10,260</td>
+                        <td>7,663</td>
+                        <td>123</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Canada</td>
+                        <td>251,338</td>
+                        <td>3,635</td>
+                        <td>10,381</td>
+                        <td>50</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Switzerland</td>
+                        <td>211,160</td>
+                        <td>9,359</td>
+                        <td>2,404</td>
+                        <td>70</td>
+                        <td>Community transmission</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Japan</td>
+                        <td>105,914</td>
+                        <td>1,132</td>
+                        <td>1,809</td>
+                        <td>3</td>
+                        <td>Clusters of cases</td>
+                    </tr>
+                
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Sri Lanka</td>
+                        <td>12,970</td>
+                        <td>400</td>
+                        <td>30</td>
+                        <td>1</td>
+                        <td>Clusters of cases</td>
+                    </tr>
+                    <tr>
+                        <td><INPUT type="checkbox" name="chk"/></td>
+                        <td>Republic of Korea</td>
+                        <td>27,2840</td>
+                        <td>89</td>
+                        <td>477</td>
+                        <td>1</td>
+                        <td>Clusters of cases</td>
+                    </tr>
+                </table>
+            </main>
+        </div>
+   </section>
+   
+   <!-- code for footer -->
+    <section id=section3>
+        <footer><br>
+            <h2 style="text-align: left; margin-top: 25px; margin-left: 30px; color:#fdf7f7 ">Corana Help Desk</h2>
+                <blockquote style="color:rgb(117, 116, 116);">Corona Help Desk website can be a source <br> to the seekers to know more about this pandemic <br> as well as to help the people mentally and physically.<br> In this website, one can have the detail information<br> about the covid-19 situation.</blockquote>
+
+                <div class="footer2">
+                    <h2 style="color:rgb(145, 142, 142)">Support
+                        <a href="#">Contact us</a>
+                        <a href="#">About</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">FQAs</a>
+                    </h2>
+                </div>
+
+                <div class="footer3">
+                    <h2 style="color: rgb(145, 142, 142); text-align: center;">Information
+                        <a href="#">WHO</a>
+                        <a href="#">Myths</a>
+                        <a href="#">From President</a>
+                        <a href="#">Facebook</a>
+                    </h2>
+                </div>
+
+                <div class="footer1">
+                    <h2 style="color:rgb(145, 142, 142) ; text-align: center;">Get in Touch
+                        <div class="logos">
+                            <a href="#"><img src="images/gmail.png" alt="gmail.image"></a>
+                            <a href="#"><img src="images/linkedin(1).png" alt="lindlien.image"></a>
+                            <a href="#"><img src="images/facebook(1).png" alt="facebook.image"></a>
+                        </div>
+                        <div class="logos2">
+                            <a href="#"><img src="images/instagram(3).png" alt="instagram.image"></a>
+                            <a href="#"><img src="images/message.png" alt="message.image"></a>
+                        </div>
+                    </h2>
+                </div>
+                <br><br>
+                <hr class="hr">
+                <p style="color: rgb(133, 128, 128); margin-left: 30px;;">&copy; coronahelpdesk.2020</p>
+        </footer>
+    </section>
+</body>
+</html>

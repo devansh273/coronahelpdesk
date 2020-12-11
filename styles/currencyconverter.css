@@ -1,0 +1,46 @@
+/*body {
+    background-image: url(../images/currency.gif);
+    background-repeat: no-repeat;
+}*/
+
+label {
+    /*background-color: indianred;
+    color: white;*/
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#amount {
+    width: 40%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+#selec {
+    width: 40%;
+    margin-left: 4.5%;
+    margin-bottom: 2%;
+}
+
+#selec2 {
+    width: 40%;
+    margin-left: 3%;
+}
+
+#convertbutton {
+    /*background-color: indianred;
+    color: white;*/
+    height: 30px;
+    width: 30%;
+    margin-left: 30%;
+    box-shadow: 1px 1px 1px 1px rgb(70, 97, 252);
+}
+
+h2, h3 {
+    /*background-color: white;
+    color:  indianred;*/
+    padding-top: 0px;
+    width: 50%;
+    text-align: center;
+    
+}

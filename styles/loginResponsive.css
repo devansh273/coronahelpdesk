@@ -1,0 +1,21 @@
+@media (max-width:576px) {
+    .container {
+        width: 330px;
+    }
+}
+
+@media (max-width:1060px) {
+    .two-boxes {
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        display: block;
+    }
+}
+
+@media (max-width:120 0px) {
+    .card {
+        width: 65%;
+    }
+}

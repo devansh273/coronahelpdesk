@@ -1,0 +1,228 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 450px;
+    margin: auto;
+}
+
+
+/*.box img {
+    height: 715px;
+    width: 800px;
+    margin: 0%;
+    padding: 0%;
+}*/
+
+.two-boxes {
+    display: flex;
+    width: 100%;
+    height: 766px;
+}
+
+.box {
+    width: 60%;
+}
+
+.card {
+    height: 100%;
+    width: 40%;
+}
+
+.big-img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card .max-img {
+    width: 200px;
+    height: 160px;
+    position: relative;
+}
+
+.card .max-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.paragraph {
+    font-weight: 600;
+    color: gray;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    border-bottom: 3px solid #bbbbbb;
+    margin-right: 35px;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.sign-in,
+.sign-up {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #bababa;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+form {
+    position: relative;
+    margin-top: 35px;
+}
+
+#sign-in .fa-envelope,
+.fa-key {
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    color: #aabb44;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#sign-in .fa-key {
+    top: 86px;
+}
+
+#sign-in .fa-eye-slash {
+    cursor: pointer;
+    position: absolute;
+    top: 92px;
+    left: 300px;
+}
+
+.fa-eye {
+    cursor: pointer;
+    position: absolute;
+    top: 92px;
+    left: 300px;
+}
+
+input[type='email'],
+input[type='password'] {
+    margin-top: 2px;
+    margin-bottom: 25px;
+    width: 75%;
+    height: 48px;
+    border: none;
+    outline: none;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    position: relative;
+    padding-left: 48px;
+    color: #777177;
+    font-size: 15px;
+    box-shadow: 2px 2px 22px #ece9e9;
+}
+
+#sign-in {
+    color: #777177;
+    font-size: 14px;
+    padding-left: 7px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-login {
+    margin-left: 5px;
+    padding-left: 15px 27px;
+    background-color: #03285f;
+    border: rgb(252, 251, 250);
+    box-shadow: 2px 2px 22px #cfcccc;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fdfdfc;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.25s ease-in-out;
+    display: block;
+    height: 50px;
+    width: 150px;
+}
+
+.btn-login:hover {
+    background-color: #ff3907;
+    box-shadow: 2px 2px 22px #cfcccc;
+}
+
+#sign-up {
+    display: none;
+}
+
+.fa-eye-slash {
+    display: none;
+}
+
+input {
+    display: block;
+}
+
+#sign-up .fa-envelope,
+.fa-key {
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    color: #aabb44;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#sign-up .btn-login {
+    margin-top: 23px;
+    padding: 16px 27px;
+}
+
+.first-name[placeholder='firstname'],
+.last-name[placeholer='lastname'],
+.first-name[placeholer=''],
+.last-name[placeholder='']
+/*this is for jquery placeholder effect*/
+
+{
+    width: 39%;
+    float: left;
+    margin-right: 15px;
+    margin-left: 1px;
+}
+
+#sign-up input[type='checkbox'] {
+    display: inline-block;
+}
+
+#sign-up .fa-key {
+    top: 235px;
+}
+
+.li-button {
+    /*This is for jquery*/
+    border-bottom: 3px solid rgb(250, 43, 7);
+}
+
+.active-1 {
+    /*This is for jquery*/
+    color: rgb(255, 8, 0);
+}
+
+#sign-up .reset {
+    display: none;
+}

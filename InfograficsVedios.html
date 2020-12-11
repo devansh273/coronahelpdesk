@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="home" content="nav">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/infografics.css">
+    <link rel="stylesheet" href="styles/InfograficsResponsive.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav1">
+
+
+        <a href="basefile.html"><i class="fas fa-globe"></i></a>
+        <a href="cases.html"><i class="fas fa-map"></i></a>
+        <a href="blogs.html">BLOG</a>
+        <a href="#whats new">WHAT'S NEW</a>
+        <a href="cases.html">CASES</a>
+
+        <div class="nav1-right">
+            <a href="update.html"><i class="fas fa-bell"></i></a>
+            <a href="#search bar"><i class="fas fa-search"></i></a>
+            <a href="login.html">LOGIN<i class="fas fa-user-circle"></i></a>
+        </div>
+
+    </nav>
+    <div class="heading">
+        <a href="homepage.html">
+            <h3>CORONA &nbsp;HELP DESK</h3>
+        </a>
+    </div>
+    <section id="section1">
+
+        <ul id="ul2">
+
+            <li> <a href="update.html">Updates & Notification</a></li>
+            <li><a href="myths2.html">Myth Buster</a></li>
+            <li class="active"> <a href="InfograficsVedios.html">Infographics</a></li>
+            <li> <a href="basefile.html">Data Table</a></li>
+            <li> <a href="guidance.html">Guidelines</a></li>
+            <li> <a href="leaders.html">From President</a></li>
+            <li> <a href="donation.html">Donate Money</a></li>
+            <li> <a href="financialsupport.html">Support</a></li>
+            <li> <a href="iso norms.html">Isolation Norms</a></li>
+            <li> <a href="travel.html">Travel</a></li>
+            <li> <a href="doanddont.html">Do's & Don'ts</a></li>
+            <li> <a href="faq.html">FAQS</a></li>
+
+
+        </ul>
+    </section>
+    <section id="section2">
+
+        <h2>Infografic Videos</h2>
+        <div class="image2">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="Images/ss1.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="Images/ss2.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="Images/ss3.jpg" style="width:100%">
+
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+        <div class="para">
+            <p>Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV). A novel coronavirus
+                (nCoV) is a new strain that has not been previously identified in humans. Coronaviruses are zoonotic, meaning they are transmitted between animals and people. Detailed investigations found that SARS-CoV was transmitted from civet cats
+                to humans and MERS-CoV from dromedary camels to humans. </p>
+        </div>
+    </section>
+
+    <section id="section3">
+
+        <div class="video">
+            <p>Things you need to know about covid-19</p>
+            <video width="500px" autoplay muted loop controls id="myVideo">
+        <source src="vedio/What you need to know about the novel coronavirus.mp4" type="video/mp4">
+        </video>
+
+            <br>
+        </div>
+    </section>
+    <section id="section4">
+
+        <div class="responsive">
+
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Coronavirus - A message from nature.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <br>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Global COVID-19 Prevention.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/5 Tips to Protect Your Mental Health During Coronavirus Crisis   UC San Diego Health.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Coronavirus   Dealing with anxiety & mental health during a pandemic.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Covid-19   Corona   Cinematic video Short movie.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Covid-19 The Road to Recovery.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Home care for suspected and mild cases of COVID-19.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Is Coronavirus  Helping the Environment, Covid Nature Reclaim, Nature after Covid 19.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Looking After your Mental Health in Times of Coronavirus.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Safety Measures For CORONAVIRUS   Coronavirus Outbreak   Pandemic   Dr Binocs Show   Peekaboo Kidz.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Welcome Back to School - COVID-19 Return to School Animation.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/How COVID-19 Can Spread in a Community.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/Can you treat coronavirus symptoms with household remedies.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+        <div class="responsive">
+            <div class="gallery">
+                <video autoplay muted loop controls>
+                    <source src="vedio/COVID-19 Animation What Happens If You Get Coronavirus.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+
+
+
+
+
+        </div>
+    </section>
+    <section id="section5">
+        <h2>Heartwarming Stories to Come Out of the Coronavirus Crisis to Make You Smile</h2>
+        <div class="video2">
+            <video width="500" autoplay muted loop controls>
+        <source src="vedio/Coronavirus Patient Explains The Worst Symptoms   NBC News.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="video2">
+            <video width="500" autoplay muted loop controls>
+        <source src="vedio//21 Year Old Mumbai Boy's Story Of COVID-19 Recovery   Curly Tales.mp4" type="video/mp4">
+        </video><br>
+        </div>
+        <div class="btn">
+            <a href="#"><button class="button button1">Discover More</button></a>
+        </div>
+
+    </section>
+    <!--footer-->
+    <div class="section6">
+        <footer>
+
+
+            <div class="wrapper">
+
+                <div class="foo first">
+                    <h2 style="color:rgb(250, 244, 244); padding-left: 0px;">Corona Help Desk</h3>
+                        <blockquote style="color:rgb(117, 116, 116);">Corona Help Desk website can be a source to the seekers to know more about this pandemic as well as to help the people mentally and physically. In this website, one can have the detail information about the covid-19 situation.
+                        </blockquote>
+                </div>
+                <div class="foo second">
+                    <h2 style="color:rgb(145, 142, 142)">Support</h3>
+                        <ul id="ul1">
+                            <li><a href="#">Contact us</a></li>
+                            <li> <a href="#">About</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li> <a href="#">FQAs</a></li>
+                        </ul>
+                </div>
+                <div class="foo third">
+                    <h2 style="color: rgb(145, 142, 142);">Information</h3>
+                        <ul id="ul1">
+                            <li><a href="#">WHO</a></li>
+                            <li> <a href="#">Myths</a></li>
+                            <li><a href="#">From President</a></li>
+                            <li> <a href="#">Facebook</a></li>
+                        </ul>
+                </div>
+                <div class="foo fourth">
+                    <h2 style="color:rgb(145, 142, 142) ; padding-bottom: 0px;">Get in Touch</h2>
+                    <div class="logo">
+
+                        <a href="#"><img src="Images/gmail.png"></a>
+                        <a href="#"><img src="images/linkedin (1).png"></a>
+                        <a href="#"><img src="images/facebook (1).png"></a>
+                        <br>
+                        <a href="#"><img src="images/instagram (3).png"></a>
+                        <a href="#"><img src="images/message.png"></a>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+            <p id="lastpara">&copy; coronahelpdesk.2020</p>
+        </footer>
+    </div>
+
+</body>

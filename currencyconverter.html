@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles/currencyconverter.css">
+
+    <!--meta content for making webpage responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+      
+
+    <label for="amount">Enter Your Currency Amount:</label>
+    <input type="text" id="amount" name="amount"> <br/>
+
+    <label for="currencycountry">Select Your Currency Country:</label>  
+  
+
+    <select id="selec">
+        <option value="0">-------</option>
+        <option value="1">America</option>
+        <option value="2">Japan</option>
+        <option value="3">India</option>
+        <option value="4">Singapore</option>
+    </select>
+    <br/>
+    <label for="convertercountry">Choose The Converter Country:</label>
+    
+    <select id="selec2">
+        <option value="0">-------</option>
+        <option value="1">America</option>
+        <option value="2">Japan</option>
+        <option value="3">India</option>
+        <option value="4">Singapore</option>
+        <option value="5">France</option>
+        <option value="6">Canada</option>
+        <option value="7">Germany</option>
+        <option value="8">Italy</option>
+        <option value="9">Netherlands</option>
+        <option value="10">Spain</option>
+        <option value="11">United Kingdom</option>
+        <option value="12">Ireland</option>
+    </select>
+
+    <br/> <br/>
+    <input type="button" id="convertbutton" onclick="check()" value="Convert">
+
+    <h2><br>The Converted Amount is:<br></h2>
+    
+    <h3 id="c_answer"></h3>
+
+  <script src="financial.js"></script>    
+
+    
+</body>
+</html>

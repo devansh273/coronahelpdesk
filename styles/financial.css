@@ -1,0 +1,448 @@
+/* tablet landscape and desktop layout (960px or more) */
+
+/* styling for body*/
+body {
+  margin: 0;
+  background-image: url(../images/background.jpg);
+  background-repeat: repeat;
+}
+
+/* styling for navigation*/
+.nav1 {
+  background-color: black;
+  opacity: 100%;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  min-width: 940px;
+}
+
+.nav1 a {
+  text-align: center;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav1 a:hover {
+  color: white;
+  background-color: #c70039;
+}
+
+.nav1-right {
+  float: right;
+}
+
+.heading {
+  position: fixed;
+  top: 0%;
+  margin-left: 700px;
+  margin-right: 200px;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+#navul {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding: 0;
+  position: fixed;
+  top: 48px;
+  height: 100%;
+  overflow: auto;
+  color: white;
+  background-color: black;
+}
+#navul li{
+  height: 50px;
+}
+
+#navul li a {
+  display: block;
+  font-size: medium;
+  color: rgb(228, 217, 217);
+  padding: 18px 16px;
+  text-decoration: none;
+}
+
+#navul li a.active {
+  background-color: #c70039;
+  color: white;
+}
+
+#navul li a:hover:not(.active) {
+  background-color: #c70039;
+  color: white;
+}
+
+.fas {
+  height: 10px;
+  width: 40px;
+}
+
+/* styling for the main tag elements*/
+main {
+ background-color: rgb(245, 242, 196);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 75%;
+  margin-top: 5em;
+  margin-left: 250px;
+  margin-right: 10px;
+  padding: 10px 40px 30px 40px;
+}
+
+main h1 {
+  color: maroon;;
+}
+
+main img {
+  height: 10em;
+  width: auto;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+main h2 {
+  font-family: 'Kaushan Script', cursive;
+  text-align: center;
+  color: maroon;
+  box-shadow: 2px 2px 2px 2px rgb(158, 132, 132);
+}
+
+main ul li {
+  font-size: 1.2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*convert button*/
+#convert {
+position: fixed;
+bottom: 10px;
+float: right;
+right: 5%;
+left: 85%;
+/*max-width: 50px;*/
+height: 38px;
+width: 70px;
+background-color: rgba(61, 57, 57, 0.986);
+color: burlywood;
+padding: .5px;
+border-radius: 4px;
+font-weight: bold;
+}
+
+/*top button*/
+#myBtn {
+position: fixed;
+bottom: 10px;
+float: right;
+right: 5%;
+left: 90%;
+max-width: 50px;
+width: 100%;
+height: 5%;
+background-color: rgba(61, 57, 57, 0.986);
+padding: .5px;
+border-radius: 4px;
+
+}
+
+#myBtn a{
+color: burlywood;
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+}
+
+/*On Hover Color Change*/
+#myBtn:hover {
+background-color: #c70039;
+}
+
+
+
+/* styling for footer*/
+.section3{
+  background-color: rgb(51, 51, 51);
+  width: 88%;
+  margin-left: 180px;
+}
+footer{
+display:flex;
+padding-top:20px;
+flex-wrap:wrap;
+}
+
+
+.footer1{
+  
+flex:2;
+}
+
+.footer1 h2{
+  color:white;
+  padding-left:35px;
+}
+.footer2 {
+flex:1;
+}
+
+.footer3 {
+flex:1;
+}
+
+.footer4{
+flex:1;
+}
+
+.last a{
+text-decoration:none;
+color: rgb(112, 109, 109);
+}
+
+.last ul{
+list-style-type:none;
+padding:10px;
+line-height:25px;
+margin-top:0px;
+padding-top:0;
+padding-left:0;
+}
+
+.logo{
+display:flex;
+justify-content:space-between;
+line-height:35px;
+}
+
+.logo1{
+flex:1;
+padding-left:10px;
+}
+
+.logo2{
+flex:1;
+padding-right:30px;
+}
+
+/*images of Get in touch section*/
+.logo1 {
+display:flex;
+flex-direction:column;
+}
+.logo2{
+display:flex;
+flex-direction:column;
+}
+
+.copyright{
+color: rgb(133, 128, 128); 
+margin-left: 30px;
+padding:2px;
+}
+.hr {
+  border-color: grey;
+}
+
+
+
+
+
+/* tablet view*/
+@media only screen and (min-width: 768px) and (max-width: 968px) {
+
+  body {
+      width:100%;
+  }
+
+  .nav1 {
+      width: 100%;
+  }
+
+  .nav1-right {
+      float: left;
+      margin-left: 0%;
+      
+  }
+
+  .heading {
+      width: 100%;
+      height: 5%;
+      margin-top: 30px;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding-top: 0%;
+      background-color: black;
+  }
+ 
+  #navul {
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      position: sticky;
+      margin-top: 93px;
+      margin-left: 0%;
+      margin-right: 0%;
+  }    
+
+  #navul li {
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      position: sticky;
+  }
+
+  main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 76%;
+  height: 75%;
+  margin-top: 5em;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px 40px 30px 40px;
+  }
+
+  #convert {
+    right: 5%;
+    left: 80%;
+    height: 50px;
+  }
+
+  .section3{
+      margin-left: 0%;
+      width: 100%;
+  }
+  footer{
+      
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+    
+    }
+    .footer1{
+      flex:1;
+    }
+    .footer2{
+      flex:1;
+    }
+    .footer3{
+      flex:1;
+    }
+    .footer4{
+      flex:1;
+    }
+    .logo1 {
+      padding-left:120px;
+        }
+    .logo2{
+      margin-right:0px;
+      padding-right:120px;
+    }
+}
+
+/* mobile view*/
+@media only screen and (max-width: 767px){
+
+  body {
+      width:100%;
+      background-image: none;
+  }
+
+  .nav1 {
+      width: 100%;
+  }
+
+  .nav1-right {
+      float: left;
+      margin-left: 0%;
+      
+  }
+
+  .heading {
+      width: 100%;
+      height: 5%;
+      margin-top: 48px;
+      margin-left: 0%;
+      margin-right: 0%;
+      padding-top: 0%;
+      background-color: black;
+  }
+ 
+  #navul {
+      width: 125%;
+      height: fit-content;
+      text-align: center;
+      position: sticky;
+      margin-top: 89px;
+      margin-left: 0%;
+      margin-right: 0%;
+  }    
+
+  #navul li {
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      position: sticky;
+  }
+
+  main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 94%;
+      height: 75%;
+      margin-top: 5em;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 10px 40px 30px 40px;
+      }
+
+      #convert {
+        right: 5%;
+        left: 70%;
+        height: 50px;
+      }
+      
+      .section3{
+          margin-left: 0%;
+          width: 125%;
+      }
+      footer{
+          
+          display:flex;
+          flex-direction:column;
+          text-align:center;
+        
+        }
+        .footer1{
+          flex:1;
+        }
+        .footer2{
+          flex:1;
+        }
+        .footer3{
+          flex:1;
+        }
+        .footer4{
+          flex:1;
+        }
+        .logo1 {
+          padding-left:120px;
+        }
+        .logo2{
+          margin-right:0px;
+          padding-right:120px;
+        }
+}

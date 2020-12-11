@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="survey.css">
+    
+</head>
+<body>
+  <header>
+      <img src="images/we-want-your-feedback-banner-template_7087-889.jpg" alt="feedback">
+  </header>
+<!--<div id="gif">
+  <img src="images/breton-feedback-box.gif" alt="feedback gif">
+</div>-->
+<main>
+  <!--<form name="feedback">
+    First Name: <input type="text" name="fname"> <br/> <br/> <br/>
+    Last Name: <input type="text" name="lname">
+  </form>-->
+
+<div id="Question1" class="show">
+    <h2>  Were you able to find the information you were looking for on our website?</h2>
+    <button type="button" data-next="Question2">Yes</button>
+    <button type="button" data-next="Question5">No</button> <br/><br/><br/><br/>
+  
+  </div>
+  <div id="Question2">
+    <h2>  Did you find that information valuable? </h2>
+    <button type="button" data-next="Question3">Yes</button>
+    <button type="button" data-next="Question5">No</button>
+  </div>
+  <div id="Question3">
+    <h2>  Is our website visually appealing? </h2>
+    <button type="button" data-next="Question4">Yes</button>
+    <button type="button" data-next="Question6">No</button>
+  </div>
+  <div id="Question4">
+    <h2>  Is our website easy to navigate? </h2>
+    <button type="button" data-next="Question5">Yes</button>
+    <button type="button" data-next="Question8">No</button>
+  </div>
+  <div id="Question5">
+    <h2>  Is that information available to you on other competing websites?</h2>
+    <button type="button" data-next="Question3">Yes</button>
+    <button type="button" data-next="Question3">No</button>
+  </div>
+  <div id="Question6">
+    <h2>  Is the content readable on our website? </h2>
+    <button type="button" data-next="Question4">Yes</button>
+    <button type="button" data-next="Question7">No</button>
+  </div>
+  <div id="Question7">
+    <h2>  Did our website help you in getting appropriate information through infographic representations? </h2>
+    <button type="button" data-next="Question9">Yes</button>
+    <button type="button" data-next="Question9">No</button>
+  </div>
+  <div id="Question8">
+    <h2>  Are the navigation panels helpful on the site? </h2>
+    <button type="button" data-next="Question9">Yes</button>
+    <button type="button" data-next="Question7">No</button>
+  </div>
+  <div id="Question9">
+    <h2>  Will you prefer revisiting our website in future for getting any information related to COVID-19? </h2>
+    <button type="button" data-next="Question10">Yes</button>
+    <button type="button" data-next="Question10">No</button>
+  </div>
+  <div id="Question10">
+    <h2>Thanks for spending your precious time in filling out this survey form. Your opinion matters!!!</h2>
+  </div>
+
+ <!-- <button type="submit" form="feedback" value="Submit" id="btn" onclick="validateform()">Submit</button>-->
+  <!--<input type="submit" id="btn" value="Submit" onclick="validateform()">-->
+</main>
+  <script src="myths.js"></script>
+</body>
+</html>

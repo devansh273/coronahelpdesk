@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/guidance.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="corona ">
+    <meta name="keywords" content="corona">
+    <meta name="author" content="ccorona">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="nav1">
+        <a class="active" href="basefile.html"><i class="fas fa-globe"></i></a>
+        <a href="cases.html"><i class="fas fa-map"></i></a>
+        <a href="blogs.html">BLOG</a>
+        <a href="#whatsnew">WHAT'S NEW</a>
+        <a href="basefile.html">CASES</a>
+
+        <div class="nav1-right">
+            <a href="update.html"><i class="fas fa-bell"></i></a>
+            <a href="#search bar"><i class="fas fa-search"></i></a>
+            <a href="login.html">LOGIN<i class="fas fa-user-circle"></i></a>
+        </div>
+    </nav><br><br>
+    <div class="heading2">
+        <a href="homepage.html">
+            <h3>CORONA &nbsp;HELP DESK</h3>
+        </a>
+    </div>
+
+
+    <!--vertical navbar-->
+    <div class="wrapper">
+        <div id="section1">
+
+            <ul class="ver">
+                <li> <a href="update.html">Updates & Notification</a></li>
+                <li><a href="myths2.html">Myth Buster</a></li>
+                <li> <a href="InfograficsVedios.html">Infographics</a></li>
+                <li> <a href="basefile.html">Data Table</a></li>
+                <li class="active"> <a href="guidance.html">Guidelines</a></li>
+                <li> <a href="leaders.html">From President</a></li>
+                <li> <a href="donation.html">Donate Money</a></li>
+                <li> <a href="financialsupport.html">Support</a></li>
+                <li> <a href="iso norms.html">Isolation Norms</a></li>
+                <li> <a href="travel.html">Travel</a></li>
+                <li> <a href="doanddont.html">Do's & Don'ts</a></li>
+                <li> <a href="faq.html">FAQS</a></li>
+            </ul>
+
+        </div>
+
+
+        <!--main-->
+
+        <div class="article">
+            <h1 class="title">Guidelines</h1>
+            <div class="top">
+                <div class="top2">
+                    <img src="images/masks.webp" alt="travel">
+                </div>
+                <div class="top1">
+                    <div class="checker">
+                        <h2>Corona Virus Self Checker</h2>
+                        <h3>A tool to help you make decisions on when to seek testing and medical care</h3>
+                        <button id="myBtn" class="started">Get Started</button>
+                    </div>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2>Coronavirus Self checker</h2>
+                            </div>
+                            <div class="modal-body">
+
+                                <form>
+                                    <div class="form1">
+                                        <h4>Within the past 14 days, have you had these types of contact with someone
+                                            with a lab-confirmed case of COVID-19 while you weren't both wearing masks
+                                            or, when touching shared items, you weren't wearing gloves? </h4>
+                                        <input type="checkbox" id="option1" name="option1" value="home">
+                                        <label for="home">Shared a home</label><br><br>
+                                        <input type="checkbox" id="option2" name="option2" value="feet">
+                                        <label for="feet"> Been within 6 feet of each other for at least 5
+                                            minutes</label><br><br>
+                                        <input type="checkbox" id="option3" name="option3" value="eating">
+                                        <label for="eating"> Shared eating or drinking utensils or other
+                                            items</label><br><br>
+                                        <input type="checkbox" id="option4" name="option4" value="hugged">
+                                        <label for="hugged">Hugged or kissed</label><br><br>
+                                        <input type="checkbox" id="option5" name="option5" value="none1">
+                                        <label for="none1">None of above</label><br><br>
+
+                                        <input type="button" value="Next" id="next" class="started"><br>
+
+                                    </div>
+
+                                    <div class="form2">
+                                        <h4>In the last 48 hours, have you had any of the following NEW symptoms? </h4>
+                                        <input type="checkbox" id="option6" name="option6" value="cough">
+                                        <label for="cough">Cough</label><br><br>
+                                        <input type="checkbox" id="option7" name="option7" value="breathing">
+                                        <label for="breathing"> Trouble breathing shortness of breath or even
+                                            wheezing</label><br><br>
+                                        <input type="checkbox" id="option8" name="option8" value="chills">
+                                        <label for="chills"> Chills or repeated shaking with chills</label><br><br>
+                                        <input type="checkbox" id="option9" name="option9" value="aches">
+                                        <label for="aches">Muscle aches</label><br><br>
+                                        <input type="checkbox" id="option10" name="option10" value="throat">
+                                        <label for="throat">Soar throat</label><br><br>
+                                        <input type="checkbox" id="option11" name="option11" value="smell">
+                                        <input type="checkbox" id="option14" name="option14" value="none2">
+                                        <label for="none2">None of above</label><br><br>
+
+                                        <input type="button" value="submit" id="submit" class="started">
+                                    </div>
+                                </form>
+
+                                <div class="result">
+                                    <div class="result1">
+                                        <h2>Based on what you described, here is what we would recommend</h2>
+                                        <h3>Manage symptoms at home</h3>
+                                        <p>Your answers indicate that you do not have any symptoms or other factors that
+                                            currently suggest the need for COVID-19 testing.</p>
+                                    </div>
+                                    <div class="result2">
+                                        <h2>Based on what you described, here is what we would recommend</h2>
+                                        <h3>Contact a health care provider within 12 hours</h3>
+                                        <p>Your answers indicate that you have possible symptoms of COVID-19 and that
+                                            you've had close contact with someone who has the condition. Based on this
+                                            information, you should speak to your health care provider. </p>
+                                    </div>
+                                    <div class="result3">
+                                        <h2>Based on what you described, here is what we would recommend</h2>
+                                        <h3>Seek medical care immediately</h3>
+                                        <p>This may be a medical emergency. Seek care immediately. A rectal temperature
+                                            of 100 F (37.8 C) or above in infants of this age must be checked by a
+                                            health care provider. The infant immune system isn't fully developed, making
+                                            it harder for infants to fight off infections. Infants also don't have the
+                                            normal warning signs of meningitis or other serious illness that older
+                                            children do. Acting quickly can save your child's life.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <h3>Wear Mask, Stay safe</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="guidelines">
+                 <ul id="guidelines">
+                    <li>
+                        <h3>Guidance for Schools</h3> 
+                        <p>This guidance is intended to support schools, both mainstream and alternative provision, to prepare for this. 
+                            It applies to primary, secondary (including sixth forms), post-16 academies, infant, junior, middle, upper, 
+                            school-based nurseries and boarding schools. We expect independent schools to follow the control measures set out 
+                            in this document in the same way as state-funded schools. Essential measures include:</p>
+                        <ul id="inside">
+                            <li>a requirement that people who are ill stay at home</li>
+                            <li>robust hand and respiratory hygiene</li>
+                            <li>enhanced cleaning and ventilation arrangements</li>
+                            <li>normal consideration of how to reduce contacts and maximise distancing between those in school wherever possible and minimise the potential for contamination so far as is reasonably practicable</li>
+                            <li>Consider the wellbeing, safety, privacy of students</li>
+                            <li>Follow-up with patients after they are discharged from the hospital.</li>
+                            <li>Follow infection prevention and control recommendations made to their setting</li>
+                        </ul>
+                        <p>These Guidelines will be continually reviewed, updated and expanded according to situation
+                           
+                        </p>
+                        <a href="https://www.gov.uk/government/publications/actions-for-schools-during-the-coronavirus-outbreak/guidance-for-full-opening-schools">source</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--cards-->
+
+            <div class="middle">
+                <div class="card card1">
+                    <img class="card-img" src="images/plane.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h2><b><a href="travel.html">Travel Advice</a></b></h2>
+                    </div>
+                </div>
+                <div class="card card2">
+                    <img class="card-img" src="images/school.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h2><b><a href="schools.html">Guidance for Schools</b></a></h2>
+                    </div>
+                </div>
+                <div class="card card3">
+                    <img class="card-img" src="images/patient.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h2><b><a href="patients.html">Guidance for Patients</b></a></h2>
+                    </div>
+                </div>
+                <div class="card card4">
+                    <img class="card-img" src="images/doctor.jpg" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h2><b><a href="guidance.html">Healthcare Facilities</a></b></h2>
+                    </div>
+                </div>
+            </div>
+
+            <!--footer-->
+
+            <div class="section3">
+                <footer><br>
+                    <div class="footer1">
+                        <h2 class="heading">Corana Help Desk</h2>
+                        <blockquote style="color:rgb(117, 116, 116);">Corona Help Desk website can be a source <br> to
+                            the seekers to know more about this pandemic <br> as well as to help the people mentally and
+                            physically.<br> In this website, one can have the detail information<br> about the covid-19
+                            situation.</blockquote>
+                    </div>
+
+                    <div class="footer2 last">
+                        <h2 style="color:rgb(145, 142, 142)">Support</h3>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                                <li> <a href="#">About</a></li>
+                                <li><a href="#">Blogs</a></li>
+                                <li> <a href="#">FQAs</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="footer3 last">
+                        <h2 style="color: rgb(145, 142, 142);">Information</h3>
+                            <ul>
+                                <li><a href="#">WHO</a></li>
+                                <li> <a href="#">Myths</a></li>
+                                <li><a href="#">From President</a></li>
+                                <li> <a href="#">Facebook</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="footer4">
+                        <h2 style="color:rgb(145, 142, 142) ;">Get in Touch</h2>
+                        <div class="logo">
+                            <div class="logo1">
+                                <a href="#"><img src="images/gmail.png"></a>
+                                <a href="#"><img src="images/linkedin (1).png"></a>
+                                <a href="#"><img src="images/facebook (1).png"></a>
+                            </div>
+                            <div class="logo2">
+                                <a href="#"><img src="images/instagram (3).png"></a>
+                                <a href="#"><img src="images/message.png"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+                <br>
+                <hr class="hr">
+                <div class="copyright">
+                    <p>&copy; coronahelpdesk.2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var form1 = document.getElementsByClassName("form1")[0];
+        var form2 = document.getElementsByClassName("form2")[0];
+        var result1 = document.getElementsByClassName("result1")[0];
+        var result2 = document.getElementsByClassName("result2")[0];
+        var result3 = document.getElementsByClassName("result3")[0];
+        var result = document.getElementsByClassName("result")[0];
+        var next = document.getElementById("next");
+        var submit = document.getElementById("submit");
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+            form1.style.display = "block";
+            form2.style.display = "none";
+            result.style.display = "none";
+        }
+        next.onclick = function () {
+            modal.style.display = "block";
+            form1.style.display = "none";
+            result.style.display = "none";
+            form2.style.display = "block";
+        }
+
+        submit.onclick = function () {
+            if (document.getElementById('option5').checked && document.getElementById('option14').checked) {
+                result1.style.display = "block";
+            }
+            else if (document.getElementById('option3').checked || document.getElementById('option4').checked || document.getElementById('option7').checked) {
+                result2.style.display = "block";
+            }
+            else {
+                result3.style.display = "block";
+            }
+
+            result.style.display = "block";
+            modal.style.display = "block";
+            form1.style.display = "none";
+            form2.style.display = "none";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

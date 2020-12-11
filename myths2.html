@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--head tag for myths page-->
+
+    <head>
+
+        <!--title for myths page-->
+        <title>Myth Busters Page</title>
+
+        <!--meta content-->
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <!--meta content for making webpage responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--link for css file -->
+        <link rel="stylesheet" href="styles/myths2.css">
+        <!--link for google fonts of type Kaushan Script -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <!--script tag for inserting fontawesome for inserting icons in header section -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="myths.js"></script>
+
+    </head>
+    <!--end of head tag-->
+
+
+    <!--body tag for myths page-->
+
+    <body id="body">
+
+        <!--header for myths page-->
+        <header>
+
+            <nav class="nav1">
+                <!--top left nav -->
+                <a class="active" href="#"><i class="fas fa-globe"></i></a>
+                <a href="cases.html"><i class="fas fa-map"></i></a>
+                <a href="blogs.html">BLOG</a>
+                <a href="#whatsnew">WHAT'S NEW</a>
+                <a href="cases.html">CASES</a>
+
+                <!--top right nav -->
+                <div class="nav1-right">
+                    <a href="update.html"><i class="fas fa-bell"></i></a>
+                    <a href="#searchbar"><i class="fas fa-search"></i></a>
+                    <a href="login.html">LOGIN<i class="fas fa-user-circle"></i></a>
+                </div>
+            </nav>
+
+            <!-- website heading -->
+            <div class="heading">
+                <h3>CORONA &nbsp;HELP DESK</h3>
+            </div>
+
+        </header>
+        <!--end of header tag-->
+
+        <!--left side vertical nav-->
+        <section id=head_section1>
+            <ul id="navul">
+                <li> <a href="update.html">Updates & Notification</a></li>
+                <li><a class="active" href="myths2.html">Myth Buster</a></li>
+                <li> <a href="InfograficsVedios.html">Infographics</a></li>
+                <li> <a href="basefile.html">Data Table</a></li>
+                <li> <a href="guidance.html">Guidelines</a></li>
+                <li> <a href="leaders.html">From President</a></li>
+                <li> <a href="donation.html">Donate Money</a></li>
+                <li> <a href="financialsupport.html">Support</a></li>
+                <li> <a href="iso norms.html">Isolation Norms</a></li>
+                <li> <a href="travel.html">Travel</a></li>
+                <li> <a href="doanddont.html">Do's & Don'ts</a></li>
+                <li> <a href="faq.html">FAQS</a></li>
+            </ul>
+        </section>
+        <!--end of left vertical nav-->
+
+        <!--main content of myths page-->      
+
+        <main>
+            <!--heading for the myth buster page-->
+            <h1>Myth Busters</h1>
+
+    <!--search myth-->
+            <input id="searchbar" onkeyup="search_myths()" type="text"
+            name="search" placeholder="Search myths...">
+
+        <!--all blogs are put inside ol     so each blog is an li in this ol-->
+            <ol>
+
+            <!--myth 1-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 1-->
+                    <div class="div1"> 
+                        <img src="images/hot-weather-thermo.jpg" alt="hot weather image" class="img1" > 
+                    </div>  
+                    <!--data for myth 1-->  
+                    <div class="div2">                    
+                        <h3># Myth</h3>
+                            <p>
+                                COVID-19 virus cannot survive in hot climate
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 1-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            The COVID-19 virus is active in all types of climates all over the world from hot and humid to cold and snowy. Your resting body temperature does not change based on the climate. COVID-19 can still survive in cold climates. So, assuming that the virus will disappear in the summer would be a false hope.
+                        </p>
+                    </div>
+                </section>
+            <!--end of myth 1-->
+            </li>
+
+            <!--myth 2-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 2-->
+                    <div class="div1"> 
+                        <img src="images/age-clipart-11.jpg" class="img1" alt="different age groups are shown"  >
+                    </div>   
+                    <!--data for myth 2--> 
+                    <div class="div2">                    
+                        <h3># Myth</h3>
+                            <p>
+                                Coronavirus affects only elderly people
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 2-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            People of all ages are being affected by the deadly coronavirus. While it is true that older people are at higher risk of developing a more serious infection, there are also immunocompromised people of all ages who face the same risks. Even young, healthy people are not immune to COVID-19. Older persons with pre-existing medical conditions such as diabetes, asthma, heart ailments, etc. seem to be more susceptible to being infected by the novel coronavirus.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 2-->
+            </li>
+
+            <!--myth 3-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 3-->
+                    <div class="div1">
+                        <img src="images/1140-pneumonia-vaccine.jpg" class="img1" alt="pneumococcal vaccine" >
+                    </div>
+                    <!--data for myth 3-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Pneumonia Vaccine can protect against the novel coronavirus
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 3-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            While the Pneumonia vaccine such as pneumococcal vaccine and Haemophilus influenza type B (Hib) vaccine, is known to cure pneumonia, there is no evidence that this vaccine can be used against the COVID-19. This virus is so new and different that it needs its own vaccine. Researchers are trying to develop a vaccine against COVID-19, and WHO is supporting their efforts.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 3-->
+            </li>
+
+                <!--myth 4-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 4-->
+                    <div class="div1">
+                        <img src="images/823420-coronavirusgarlictreatmentfake.jpg" class="img1" alt="image on fact check of consuming garlic to prevent COVID-19" >
+                    </div>
+                    <!--data for myth 4-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Consuming garlic will protect against the novel coronavirus
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 4-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Garlic is known to contain several health benefits. Due to its antimicrobial properties, people assume it can also help us in protecting ourselves from COVID-19 infection. However, it does not protect you against the virus. There is no evidence that they can help protect you against contracting the virus.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 4-->
+            </li>
+
+                <!--myth 5-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 5-->
+                    <div class="div1">
+                        <img src="images/spray.jpg" class="img1" alt="image of spraying alcohol/chlorine" >
+                    </div>
+                    <!--data for myth 5-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Spraying Alcohol or Chlorine on your body, will kill the virus
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 5-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Spraying alcohol or chlorine all over your body will not kill viruses that have already entered your body. They are great for keeping your home and workspace clean and disinfected, but they won’t have the same effect on your body. In fact, they are harmful and should not be consumed. But using them on your body can be harmful for your clothes or mucous membranes (i.e. eyes, mouth).
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 5-->
+            </li>
+                <!--myth 6-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 6-->
+                    <div class="div1">
+                        <img src="images/shutterstock9723865.jpg" class="img1" alt="person consuming meat" >
+                    </div>
+                    <!--data for myth 6-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Consuming meat or non-vegetarian food can cause coronavirus infection
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 6-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            While it has been found that the novel coronavirus was transmitted from an animal to man; till now there are no known animal species to carry this virus. The virus doesn’t spread through consumption of meat—chicken, mutton, or fish, and avoiding it doesn’t mean you will be safe. It can be spread when someone comes in contact with respiratory droplets of an infected person. And the only way to prevent this is by using hand sanitizers regularly, washing hands before eating anything and following social distancing. Ensure you consume meat or non-vegetarian foods prepared with hygiene care.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 6-->
+            </li>
+
+                <!--myth 7-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 7-->
+                    <div class="div1">
+                        <img src="images/M3-8-3-Deep-Breathing-Exercises-360x240.jpg" class="img1" alt="holding breath image" >
+                    </div>
+                    <!--data for myth 7-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            You are not infected by coronavirus, if you can hold your breath for ten seconds without discomfort
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 7-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            You cannot conclude that you are not infected by coronavirus by holding your breath for 10 seconds. Many young patients can hold their breath even longer, while elderly people cannot hold their breath for 10 seconds even without the infection. The only way to make sure you are not infected is to get a laboratory test done if you see any symptoms related to COVID-19 in your body.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 7-->
+            </li>
+
+                <!--myth 8-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 8-->
+                    <div class="div1">
+                        <img src="images/dog-resting-chin-on-persons-hand-768.jpg" class="img1" alt="image of pet dog" >
+                    </div>
+                    <!--data for myth 8-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Pets can spread the COVID-19 virus
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 8-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            This myth started when a dog was tested positive in Hong Kong. But later it was found that it was because the dog owner was infected with the virus, and when tested, the virus was found in the dog’s canine. However, WHO stepped in telling that coronavirus in dogs is not possible. Also, there is no evidence that pets can spread the virus to humans. However, it is known that animals can spread other types of diseases so it is always good to follow healthy habits when you are around pets.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 8-->
+            </li>
+
+                <!--myth 9-->
+            <li class="blogs">
+                <section class="section1">
+                    <!--image for myth 9-->
+                    <div class="div1">
+                        <img src="images/8-coronaviruso.jpg" class="img1" alt="young covid patient" >
+                    </div>
+                    <!--data for myth 9-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Younger people are not susceptible to the virus
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 9-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            As per the guidelines provided by WHO, people of all age groups can contract the deadly novel coronavirus or 2019-nCoV. Older people with pre-existing medical conditions such as diabetes, asthma, heart ailments, etc. seem to be more susceptible to being infected by the novel coronavirus. However, this risk of getting infected by this virus is also for the younger age group. 
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 9-->
+            </li>
+
+                <!--myth 10-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 10-->
+                    <div class="div1">
+                        <img src="images/covid-faq-woman-in-mask.jpg" class="img1" alt="a woman wearing mask" >
+                    </div>
+                    <!--data for myth 10-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Only people who are already sick should wear a mask. If you’re healthy, you don’t need one. 
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 10-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Some people with COVID-19, or other viruses, will be visibly sick. However, many people with COVID-19 may be asymptomatic, which means they feel perfectly healthy. Asymptomatic patients feel well and appear fine to others. They can still spread a virus to others and therefore can make other people sick. While the COVID-19 pandemic continues, both healthy and sick people should wear masks or face coverings while around others to try to prevent spread of the virus.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 10-->
+            </li>
+
+                <!--myth 11-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 11-->
+                    <div class="div1">
+                        <img src="images/Cold-Water-Vs-Warm-Water-1(1).jpg" class="img1" alt="hot vs cold water image" >
+                    </div>
+                    <!--data for myth 11-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Taking hot bath/drinking warm water will cure the infection
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 11-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Coronavirus symptoms for most of the infected people include cough, mild fevers, sore throat, headache, and body ache. While drinking warm water can make you feel better, there is no evidence that it will cure you. Having a bath in hot water won't work either. It does not matter at what temperature you take your bath or shower. According to WHO,  the body temperature remains at an average of 36.5°C to 37°C, regardless of the temperature of your bath or shower.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 11-->
+            </li>
+
+                <!--myth 12-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 12-->
+                    <div class="div1">
+                        <img src="images/housefly.jpg" class="img1" alt="housefly image" >
+                    </div>
+                    <!--data for myth 12-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Virus can  spread through Mosquito/Houseflies
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 12-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            There is no evidence or information to suggest that the COVID-19 virus transmitted through houseflies/mosquitoes. COVID-19 is a respiratory virus which spreads through the discharge of droplets while coughing and sneezing or through discharge from the nose or through droplets of saliva. You may become infected by touching a contaminated surface and then touching your eyes, nose or mouth before washing your hands.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 12-->
+            </li>
+
+                <!--myth 13-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 13-->
+                    <div class="div1">
+                        <img src="images/shutterstock_544348294.jpg" class="img1" alt="antibiotics image" >
+                    </div>
+                    <!--data for myth 13-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Hydroxychloroquine / Antibiotics are effective against the COVID-19 infection
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 13-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Antibiotics are effective in fighting against bacteria. COVID-19 is a virus so it cannot be treated or used as a prevention measure against the novel coronavirus. Also, several drug trials are ongoing, but there is currently no proof that any drug can cure or prevent COVID-19. The misuse of hydroxychloroquine can cause serious side effects and illness. WHO is coordinating efforts to develop and evaluate medicines to treat COVID-19 by supporting the researchers in developing the vaccine for novel coronavirus.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 13-->
+            </li>
+
+                <!--myth 14-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 14-->
+                    <div class="div1">
+                        <img src="images/shutterstock_1683745294.jpg" class="img1" alt="cloth masks" >
+                    </div>
+                    <!--data for myth 14-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Wearing a cloth mask will make me sick because of carbon dioxide poisoning
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 14-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            When you exhale, carbon dioxide leaves your lungs and exits the body through your nose or mouth. Carbon dioxide is a gas made up of small molecules. These molecules are so small that they can pass through many materials, including the materials used to make masks. If you are using a medical-grade or cloth mask, carbon dioxide will pass through safely. It will not accumulate inside the mask or make you sick. Remember that wearing a mask may be a new experience for you, but medical providers have been wearing masks safely for decades to protect themselves while helping others.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 14-->
+            </li>
+
+                <!--myth 15-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 15-->
+                    <div class="div1">
+                        <img src="images/handheld-thermal-scanner.jpg" class="img1" alt="thermal scanner image" >
+                    </div>
+                    <!--data for myth 15-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Thermal Scanners can detect COVID-19
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 15-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Thermal scanners can detect people who have a fever. However, they cannot detect those who are infected by the COVID-19 disease but have not developed a fever. Persons infected by the novel coronavirus take some time to develop a fever which can be between 2 to 10 days. Hence, thermal scanners cannot detect if a person is infected by the virus.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 15-->
+            </li>
+
+                <!--myth 16-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 16-->
+                    <div class="div1">
+                        <img src="images/Importance-of-vitamin-D-in-dentistry_large-1188x668-.jpg" class="img1" alt="vitamin-d" >
+                    </div>
+                    <!--data for myth 16-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Vitamin and mineral supplements helps cure the infection
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 16-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Micronutrients, such as vitamins D and C and zinc, are critical for a well-functioning immune system and play a vital role in promoting health and nutritional well-being.  There is yet no evidence that it might help people fight off the new coronavirus. WHO is coordinating efforts to develop and evaluate medicines to treat COVID-19.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 16-->
+            </li>
+
+                <!--myth 17-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 17-->
+                    <div class="div1">
+                        <img src="images/5e94852c29d6d969186830c2.jpg" class="img1" alt="corona antibodies" >
+                    </div>
+                    <!--data for myth 17-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            We know you can’t catch COVID-19 twice
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 17-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            The body’s immune response to COVID-19 is still a mystery, and a small and growing number of cases suggest it’s possible to catch the virus twice. It’s unclear whether antibody responses are maintained or if they provide protection from again getting infected. Available research indicates not all recovered patients develop antibodies for immunity after infection. Some patients, particularly asymptomatic ones, produce antibodies immediately after infection only to have them disappear shortly afterward.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 17-->
+            </li>
+
+                <!--myth 18-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 18-->
+                    <div class="div1">
+                        <img src="images/web_hand-dryer_shutterstock_536171299.jpg" class="img1" alt="hand dryer image" >
+                    </div>
+                    <!--data for myth 18-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Hand Dryers can kill the coronavirus
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 18-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            Hand dryers do not prevent COVID-19. Instead, washing your hands regularly using alcohol-based sanitizer or hand wash will do you good. Once your hands are cleaned, you should dry them thoroughly by using paper towels or a warm air dryer.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 18-->
+            </li>
+
+                <!--myth 19-->
+            <li class="blogs">
+                <section>
+                    <!--image for myth 19-->
+                    <div class="div1">
+                        <img src="images/gargle.jpg" class="img1" alt="gargling image" >
+                    </div>
+                    <!--data for myth 19-->
+                    <div class="div2">
+                        <h3># Myth</h3>
+                        <p>
+                            Regularly gargling with saltwater or saline can help in preventing COVID-19 infection
+                        </p>
+                    </div>
+                    <!--relevant fact for myth 19-->
+                    <div class="div3">
+                        <h3>Fact</h3>
+                        <p>
+                            There is no evidence that regularly gargling has protected people from infection with the coronavirus. While this may help soothe a sore throat, this practice will not prevent the virus from entering your lungs.
+                        </p>
+                    </div>
+                </section>
+                <!--end of myth 19-->
+            </li>
+        
+            </ol>
+
+                <!--survey button-->
+                <button id="surveybtn" onclick="popUp()"><img src="images/survey.jpg" alt="survey button" id="btnimg"></button>
+
+                <!--scroll to top button-->
+                <button id="myBtn"><a href="#top">Top </a> </button>
+
+        </main>
+    <!--end of main content of myths page-->
+
+    <!--footer-->
+        <div  class="section3">
+            <footer><br>
+                <div class="footer1">
+                    <h2>Corona Help Desk</h2>
+                    <blockquote style="color:rgb(117, 116, 116);">Corona Help Desk website can be a source <br> to the seekers to know more about this pandemic <br> as well as to help the people mentally and physically.<br> In this website, one can have the detail information<br> about the covid-19 situation.</blockquote>
+                </div>  
+
+                <div class="footer2 last">
+                    <h2 style="color:rgb(145, 142, 142)">Support</h2>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li> <a href="#">About</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li> <a href="#">FQAs</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer3 last">
+                    <h2 style="color: rgb(145, 142, 142);">Information</h2>
+                    <ul>
+                        <li><a href="#">WHO</a></li>
+                        <li> <a href="#">Myths</a></li>
+                        <li><a href="#">From President</a></li>
+                        <li> <a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer4">
+                    <h2 style="color:rgb(145, 142, 142) ;">Get in Touch</h2>
+                    <div class="logo">
+                        <div class="logo1">
+                            <a href="#"><img src="images/gmail.png" alt="gmail icon"></a>
+                            <a href="#"><img src="images/linkedin(1).png" alt="linkedin"></a>
+                            <a href="#"><img src="images/facebook(1).png" alt="facebook"></a>
+                        </div>
+                        <div class="logo2">
+                            <a href="#"><img src="images/instagram(3).png" alt="instagram icon"></a>
+                            <a href="#"><img src="images/message.png" alt="messaging icon"></a>
+                        </div>
+                    </div>		
+                </div>
+    
+        </footer>			
+            <br>
+            <hr class="hr">
+                <div class="copyright">
+                <p>&copy; coronahelpdesk.2020</p>
+                </div>
+    <!--end of footer-->
+
+        </div>
+            
+    </body>
+</html>

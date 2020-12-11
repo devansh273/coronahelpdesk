@@ -1,0 +1,414 @@
+body {
+    margin: 0;
+}
+
+.nav1 {
+    background-color: black;
+    opacity: 100%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav1 a {
+    text-align: center;
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.nav1 a:hover {
+    color: white;
+    background-color: #c70039;
+}
+
+.nav1-right {
+    float: right;
+}
+
+.heading {
+    position: fixed;
+    margin-top: -2.60%;
+    margin-left: 700px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+.heading a {
+    text-decoration: none;
+    color: white;
+}
+
+#ul2 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    top: 48px;
+    height: 100%;
+    overflow: auto;
+    color: white;
+    background-color: black;
+    z-index: 1;
+}
+
+#ul2 li a {
+    display: block;
+    font-size: medium;
+    color: rgb(228, 217, 217);
+    padding: 18px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #c70039;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #c70039;
+    color: white;
+}
+
+.fas {
+    height: 10px;
+    width: 40px;
+}
+
+
+/*section2*/
+
+#section2 {
+    min-height: 700px;
+    background-image: linear-gradient(rgb(250, 246, 249), rgb(17, 17, 17));
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    z-index: 1;
+    padding: 0px;
+}
+
+#section2 .image2 {
+    height: 500px;
+    width: 70%;
+    margin-left: 50px;
+    padding-top: 10px;
+    z-index: 1;
+}
+
+#section2 h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(rgb(189, 5, 30), rgb(4, 12, 56));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 50px;
+    z-index: 1;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin-left: 300px;
+    z-index: 0;
+}
+
+.para {
+    text-align: center;
+    float: right;
+    margin-top: -34%;
+    min-height: 400px;
+    width: 300px;
+    margin-right: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: -webkit-linear-gradient(rgb(28, 4, 248), rgb(5, 146, 202));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1px;
+}
+
+li .active {
+    background-color: #c70039;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dots {
+    margin-left: 330px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/*section3*/
+
+
+/*vedios*/
+
+#section3 {
+    height: 650px;
+    width: 100%;
+}
+
+#section3 p {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(rgb(233, 15, 44), rgb(18, 50, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 10px;
+}
+
+.video {
+    padding-left: 400px;
+    z-index: 0;
+}
+
+#section3 video {
+    width: 90%;
+    height: 500px;
+    z-index: 1;
+    padding-left: 30;
+}
+
+#section4 {
+    min-height: 2250px;
+    width: 100%;
+    background-color: rgb(240, 215, 217);
+}
+
+#section4 .responsive .gallery video {
+    width: 500px;
+    padding-left: 10px;
+}
+
+.responsive {
+    padding-left: 230px;
+    padding-top: 20px;
+    float: left;
+    width: 500;
+}
+
+
+/*section5*/
+
+#section5 {
+    width: 100%;
+    height: 900px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section5 h2 {
+    text-align: center;
+    margin: 0%;
+    padding-left: 300px;
+    padding-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, #3705ee, #f80505, #d2f703, #3cf304);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#section5 .video2 {
+    padding-left: 600px;
+    padding-top: 50px;
+}
+
+#section5 .button {
+    background-color: #0a57fc;
+    /* Green */
+    border: 2px solid rgb(1, 15, 0);
+    color: rgb(253, 252, 252);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    border-radius: 5px;
+}
+
+#section5 .btn {
+    padding-left: 50%;
+    padding-top: 50px;
+}
+
+
+/*footer*/
+
+.section6 footer {
+    background-image: -webkit-linear-gradient(left, rgb(24, 19, 20), black);
+    height: 100px;
+}
+
+footer {
+    padding: 25px;
+    min-height: 300px;
+}
+
+footer .first {
+    width: 30%;
+}
+
+footer .second {
+    width: 15%;
+}
+
+footer .third {
+    width: 20%;
+}
+
+.foo {
+    min-height: 100px;
+    margin: 2%;
+    float: left;
+}
+
+.wrapper {
+    float: right;
+    width: 85%;
+}
+
+
+/*images of Get in touch section*/
+
+#ul1 {
+    list-style-type: none;
+    padding: 0px;
+    line-height: 35px;
+    margin-top: 0px;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+#ul1 a {
+    text-decoration: none;
+    color: rgb(112, 109, 109);
+}
+
+.logo1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.hr {
+    border-color: grey;
+    display: block;
+    width: 100%;
+    padding-left: 15px;
+}
+
+#lastpara {
+    color: rgb(133, 128, 128);
+    margin-left: 200px;
+}
